@@ -1,0 +1,32 @@
+@import "mixins";
+@import "variables";
+
+@media (min-width: 576px){
+  .all-cards {
+    padding: 0 5%;
+  }
+}
+@media (min-width: 768px) {
+  .all-cards {
+    span {
+      font-size: $big;
+    }
+    .item-card-one {
+      border-radius: 20px;
+      .text {
+        font-size: 70px;
+      }
+    }
+    .item-card-two {
+      border-radius: 20px;
+      .text {
+        font-size: 70px;
+      }
+    }
+  }
+}
+@media (min-width: 1200px){
+  .all-cards {
+    padding: 0 15%;
+  }
+}

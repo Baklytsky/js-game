@@ -1,0 +1,80 @@
+@import "mixins";
+@import "variables";
+
+.indent {
+  padding: 0;
+  margin: 0;
+}
+.all-cards {
+  height: 100vh;
+  background-color: $white;
+
+  position: relative;
+  .congrats {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    color: $facebook;
+    background-color: $white;
+    padding-top: 18%;
+    z-index: 1;
+    opacity: 0.95;
+    display: none;
+    h2, h3 {
+      font-family: Coolvetica, sans-serif;
+    }
+    p {
+      color: $active-btn;
+    }
+    .restart-btn {
+      background-color: $facebook;
+      color: $white;
+      padding: 5px 20px;
+      border-radius: 10px;
+      outline: none;
+      transition: all .3s ease-in-out;
+      &:hover {
+        background-color: $google;
+      }
+    }
+  }
+    span {
+    font-size: $normal;
+    color: $black;
+  }
+  .item-card-one {
+    background-color: $facebook;
+    border: 2px solid $white;
+    border-radius: 1em;
+    transition: transform 1s;
+    &:hover {
+      background-color: darken($facebook, 10%);
+      cursor: pointer;
+    }
+    &:active {
+      transform: scale(0.8);
+      transition: transform .2s;
+    }
+    .text {
+      font-size: 50px;
+      opacity: 0;
+    }
+  }
+  .item-card-two {
+    width: 100%;
+    background-color: $white;
+    border: 2px solid $facebook;
+    border-radius: 1em;
+    &:hover {
+      background-color: darken($white, 10%);
+    }
+    .text {
+      font-size: 50px;
+      color: $black;
+      opacity: 1;
+    }
+  }
+}
+

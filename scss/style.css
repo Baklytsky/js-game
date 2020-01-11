@@ -1,0 +1,63 @@
+.indent {
+  padding: 0;
+  margin: 0; }
+
+.all-cards {
+  height: 100vh;
+  background-color: #FFF;
+  position: relative; }
+  .all-cards .congrats {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    color: #3B5998;
+    background-color: #FFF;
+    padding-top: 18%;
+    z-index: 1;
+    opacity: 0.95;
+    display: none; }
+    .all-cards .congrats h2, .all-cards .congrats h3 {
+      font-family: Coolvetica, sans-serif; }
+    .all-cards .congrats p {
+      color: #F2743E; }
+    .all-cards .congrats .restart-btn {
+      background-color: #3B5998;
+      color: #FFF;
+      padding: 5px 20px;
+      border-radius: 10px;
+      outline: none;
+      transition: all .3s ease-in-out; }
+      .all-cards .congrats .restart-btn:hover {
+        background-color: #DD4B39; }
+  .all-cards span {
+    font-size: 1em;
+    color: #000; }
+  .all-cards .item-card-one {
+    background-color: #3B5998;
+    border: 2px solid #FFF;
+    border-radius: 1em;
+    transition: transform 1s; }
+    .all-cards .item-card-one:hover {
+      background-color: #2d4373;
+      cursor: pointer; }
+    .all-cards .item-card-one:active {
+      transform: scale(0.8);
+      transition: transform .2s; }
+    .all-cards .item-card-one .text {
+      font-size: 50px;
+      opacity: 0; }
+  .all-cards .item-card-two {
+    width: 100%;
+    background-color: #FFF;
+    border: 2px solid #3B5998;
+    border-radius: 1em; }
+    .all-cards .item-card-two:hover {
+      background-color: #e6e6e6; }
+    .all-cards .item-card-two .text {
+      font-size: 50px;
+      color: #000;
+      opacity: 1; }
+
+/*# sourceMappingURL=style.css.map */
