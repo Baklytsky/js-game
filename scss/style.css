@@ -4,7 +4,6 @@
 
 .all-cards {
   height: 100vh;
-  background-color: #FFF;
   position: relative; }
   .all-cards .congrats {
     position: absolute;
