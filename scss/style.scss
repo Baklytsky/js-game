@@ -7,7 +7,8 @@
 }
 .all-cards {
   height: 100vh;
-
+  font-weight: 700;
+  background: url('../img/board.jpg') no-repeat center/cover;
   position: relative;
   .congrats {
     position: absolute;
@@ -15,20 +16,19 @@
     right: 0;
     left: 0;
     bottom: 0;
-    color: $facebook;
-    background-color: $white;
+    color: $white;
+    background: url('../img/board.jpg') no-repeat center/cover;
     padding-top: 18%;
     z-index: 1;
-    opacity: 0.95;
     display: none;
     h2, h3 {
-      font-family: Coolvetica, sans-serif;
-    }
-    p {
-      color: $active-btn;
+      font-size: $bigger;
+      font-weight: bold;
     }
     .restart-btn {
-      background-color: $facebook;
+      font-size: $big-two;
+      font-weight: 700;
+      background-color: $twitter;
       color: $white;
       padding: 5px 20px;
       border-radius: 10px;
@@ -39,39 +39,55 @@
       }
     }
   }
-    span {
-    font-size: $normal;
-    color: $black;
+
+  .choice, .right, .total-percent {
+    font-weight: 700;
+    color: $white;
+    animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    @keyframes text-focus-in {
+      0% {
+        filter: blur(12px);
+        opacity: 0;
+      }
+      100% {
+        filter: blur(0px);
+        opacity: 1;
+      }
+    }
   }
   .item-card-one {
-    background-color: $facebook;
-    border: 2px solid $white;
+    background-color: transparent;
+    border: 5px solid $black;
     border-radius: 1em;
     transition: transform 1s;
     &:hover {
-      background-color: darken($facebook, 10%);
       cursor: pointer;
+      box-shadow: -5px -5px 30px 5px $black,
+      5px 5px 30px 5px $black;
     }
     &:active {
       transform: scale(0.8);
       transition: transform .2s;
     }
     .text {
-      font-size: 50px;
+      font-size: $big;
       opacity: 0;
     }
   }
   .item-card-two {
     width: 100%;
-    background-color: $white;
-    border: 2px solid $facebook;
+    color: $white;
+    background-color: transparent;
+    border: 5px solid transparent;
     border-radius: 1em;
     &:hover {
-      background-color: darken($white, 10%);
+      box-shadow: -5px -5px 30px 5px $white,
+      5px 5px 30px 5px $white;
+      color: $blogger;
     }
     .text {
-      font-size: 50px;
-      color: $black;
+      font-size: $big;
+      color: $white;
       opacity: 1;
     }
   }

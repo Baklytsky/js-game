@@ -2,18 +2,20 @@
   .all-cards {
     padding: 0 5%; } }
 @media (min-width: 768px) {
-  .all-cards span {
-    font-size: 1.5em; }
-  .all-cards .item-card-one {
-    border-radius: 20px; }
-    .all-cards .item-card-one .text {
-      font-size: 70px; }
-  .all-cards .item-card-two {
-    border-radius: 20px; }
-    .all-cards .item-card-two .text {
-      font-size: 70px; } }
+  .all-cards {
+    letter-spacing: 0.8em; }
+    .all-cards .choice, .all-cards .right, .all-cards .total-percent {
+      font-size: 2em; }
+    .all-cards .item-card-one {
+      border-radius: 20px; }
+      .all-cards .item-card-one .text {
+        font-size: 3em; }
+    .all-cards .item-card-two {
+      border-radius: 20px; }
+      .all-cards .item-card-two .text {
+        font-size: 3em; } }
 @media (min-width: 1200px) {
   .all-cards {
-    padding: 0 15%; } }
+    padding: 0 20%; } }
 
 /*# sourceMappingURL=style-breakpoints.css.map */
