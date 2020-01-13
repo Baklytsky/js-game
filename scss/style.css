@@ -4,6 +4,8 @@
 
 .all-cards {
   height: 100vh;
+  font-weight: 700;
+  background: url("../img/board.jpg") no-repeat center/cover;
   position: relative; }
   .all-cards .congrats {
     position: absolute;
@@ -11,18 +13,18 @@
     right: 0;
     left: 0;
     bottom: 0;
-    color: #3B5998;
-    background-color: #FFF;
+    color: #FFF;
+    background: url("../img/board.jpg") no-repeat center/cover;
     padding-top: 18%;
     z-index: 1;
-    opacity: 0.95;
     display: none; }
     .all-cards .congrats h2, .all-cards .congrats h3 {
-      font-family: Coolvetica, sans-serif; }
-    .all-cards .congrats p {
-      color: #F2743E; }
+      font-size: 3em;
+      font-weight: bold; }
     .all-cards .congrats .restart-btn {
-      background-color: #3B5998;
+      font-size: em;
+      font-weight: 700;
+      background-color: #1DA1F2;
       color: #FFF;
       padding: 5px 20px;
       border-radius: 10px;
@@ -30,33 +32,43 @@
       transition: all .3s ease-in-out; }
       .all-cards .congrats .restart-btn:hover {
         background-color: #DD4B39; }
-  .all-cards span {
-    font-size: 1em;
-    color: #000; }
+  .all-cards .choice, .all-cards .right, .all-cards .total-percent {
+    font-weight: 700;
+    color: #FFF;
+    animation: text-focus-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    filter: blur(0px);
+    opacity: 1; } }
   .all-cards .item-card-one {
-    background-color: #3B5998;
-    border: 2px solid #FFF;
+    background-color: transparent;
+    border: 5px solid #000;
     border-radius: 1em;
     transition: transform 1s; }
     .all-cards .item-card-one:hover {
-      background-color: #2d4373;
-      cursor: pointer; }
+      cursor: pointer;
+      box-shadow: -5px -5px 30px 5px #000, 5px 5px 30px 5px #000; }
     .all-cards .item-card-one:active {
       transform: scale(0.8);
       transition: transform .2s; }
     .all-cards .item-card-one .text {
-      font-size: 50px;
+      font-size: 1.5em;
       opacity: 0; }
   .all-cards .item-card-two {
     width: 100%;
-    background-color: #FFF;
-    border: 2px solid #3B5998;
+    color: #FFF;
+    background-color: transparent;
+    border: 5px solid transparent;
     border-radius: 1em; }
     .all-cards .item-card-two:hover {
-      background-color: #e6e6e6; }
+      box-shadow: -5px -5px 30px 5px #FFF, 5px 5px 30px 5px #FFF;
+      color: #F57D00; }
     .all-cards .item-card-two .text {
-      font-size: 50px;
-      color: #000;
+      font-size: 1.5em;
+      color: #FFF;
       opacity: 1; }
 
 /*# sourceMappingURL=style.css.map */
